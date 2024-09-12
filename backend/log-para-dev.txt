@@ -1,0 +1,12 @@
+Toda vez que mudar ou for criar o banco use:
+
+npx prisma migrate dev --name nome-da-migracao
+npx prisma generate
+
+Se quiser adicionar coisas no banco use:
+
+npx prisma studio
+
+Gerando os cursos na primeira vez
+
+npm run seed

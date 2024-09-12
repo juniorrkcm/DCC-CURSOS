@@ -1,0 +1,3 @@
+npm init -y
+npm install -g lite-server (servidor pra rodar teu site html)
+COMANDO: lite-server (dentro da design)
