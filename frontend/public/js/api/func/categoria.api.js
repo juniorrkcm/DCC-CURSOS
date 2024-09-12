@@ -38,4 +38,13 @@ export async function carregarCategorias() {
     } catch (error) {
         console.error('Erro ao carregar categorias:', error);
     }
+    // Lógica do botão de reset
+    document.getElementById('reset-btn').addEventListener('click', () => {
+        const categoriaList = document.getElementById('categorias');
+        categoriaList.querySelectorAll('a').forEach(link => {
+            link.classList.remove('active'); // Remover a classe 'active' de todas as categorias
+        });
+        aplicarFiltro({ categoriaId: null }); // Limpa o filtro de categoria
+    });
 }
+
