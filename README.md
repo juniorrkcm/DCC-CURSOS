@@ -76,3 +76,13 @@ Este repositório contém um sistema de gerenciamento de cursos desenvolvido par
 - **backend/**: Configuração e gerenciamento de banco de dados com Prisma
 - **package.json**: Gerenciamento de dependências
 
+## Contribuições
+
+Possíveis atualizações podem incluir:
+- Adicionar uma página extra para que o administrador possa cadastrar novos cursos diretamente pelo site, sem a necessidade de usar a interface do Prisma Studio.
+
+Sinta-se à vontade para contribuir com melhorias, correções ou novas funcionalidades.
+
+## Licença
+
+Este projeto está licenciado sob a Licença MIT. Consulte o arquivo `LICENSE` para mais detalhes.
