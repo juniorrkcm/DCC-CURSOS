@@ -1,6 +1,6 @@
 # DCC-CURSOS
 
-Este repositório contém um sistema de gerenciamento de cursos desenvolvido para o DCC (Departamento de Ciência da Computação). O sistema permite cadastrar, visualizar e filtrar cursos, com uma interface amigável e backend integrado.
+Este repositório contém um sistema de gerenciamento de cursos desenvolvido para o DCC (Departamento de Ciência da Computação). O sistema permite cadastrar, visualizar e filtrar cursos com uma interface amigável e backend integrado com o Prisma.
 
 ## Funcionalidades
 
@@ -11,14 +11,41 @@ Este repositório contém um sistema de gerenciamento de cursos desenvolvido par
 ## Tecnologias utilizadas
 
 - **Frontend**: HTML, CSS, JavaScript
-- **Backend**: PHP
-- **Dependências**: Node.js, npm
+- **Backend**: Prisma para gerenciamento do banco de dados
+- **Dependências**: Node.js, npm, Prisma
 
 ## Pré-requisitos
 
 - Node.js (versão 14+)
 - npm
-- Servidor PHP (ex: XAMPP)
+- Prisma (versão 3+)
+
+## Configuração do Prisma
+
+1. Instale o Prisma:
+    ```bash
+    npm install prisma --save-dev
+    ```
+
+2. Inicialize o Prisma no projeto:
+    ```bash
+    npx prisma init
+    ```
+
+3. Configure o acesso ao banco de dados no arquivo `.env`. Exemplo:
+    ```
+    DATABASE_URL="postgresql://user:password@localhost:5432/mydb"
+    ```
+
+4. Após configurar o Prisma, execute a migração para criar as tabelas no banco de dados:
+    ```bash
+    npx prisma migrate dev
+    ```
+
+5. Para gerenciar o cadastro de cursos e filtros, acesse a interface do Prisma Studio:
+    ```bash
+    npx prisma studio
+    ```
 
 ## Como executar o projeto
 
@@ -33,14 +60,12 @@ Este repositório contém um sistema de gerenciamento de cursos desenvolvido par
     npm install
     ```
 
-3. Inicie o servidor backend com seu servidor local (ex: XAMPP).
-
-4. Para rodar o frontend:
+3. Inicie o servidor:
     ```bash
     npm start
     ```
 
-5. Acesse no navegador:
+4. Acesse no navegador:
     ```
     http://localhost:3000
     ```
@@ -48,6 +73,6 @@ Este repositório contém um sistema de gerenciamento de cursos desenvolvido par
 ## Estrutura do projeto
 
 - **frontend/**: Arquivos HTML, CSS e JavaScript
-- **backend/**: Scripts PHP para gestão dos dados
+- **backend/**: Configuração e gerenciamento de banco de dados com Prisma
 - **package.json**: Gerenciamento de dependências
 
