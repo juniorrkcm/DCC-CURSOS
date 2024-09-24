@@ -20,7 +20,30 @@ Este repositório contém um sistema de gerenciamento de cursos desenvolvido par
 - npm
 - Prisma (versão 3+)
 
-## Configuração do Prisma
+## Como executar o projeto
+
+1. Clone o repositório:
+    ```bash
+    git clone https://github.com/juniorrkcm/DCC-CURSOS.git
+    cd DCC-CURSOS
+    ```
+
+2. Instale as dependências:
+    ```bash
+    npm install
+    ```
+
+3. Inicie o servidor:
+    ```bash
+    npm start
+    ```
+
+4. Acesse no navegador:
+    ```
+    http://localhost:3000
+    ```
+
+    ## Configuração do Prisma
 
 1. Instale o Prisma:
     ```bash
@@ -45,29 +68,6 @@ Este repositório contém um sistema de gerenciamento de cursos desenvolvido par
 5. Para gerenciar o cadastro de cursos e filtros, acesse a interface do Prisma Studio:
     ```bash
     npx prisma studio
-    ```
-
-## Como executar o projeto
-
-1. Clone o repositório:
-    ```bash
-    git clone https://github.com/juniorrkcm/DCC-CURSOS.git
-    cd DCC-CURSOS
-    ```
-
-2. Instale as dependências:
-    ```bash
-    npm install
-    ```
-
-3. Inicie o servidor:
-    ```bash
-    npm start
-    ```
-
-4. Acesse no navegador:
-    ```
-    http://localhost:3000
     ```
 
 ## Estrutura do projeto
